@@ -1,0 +1,77 @@
+@use "../helpers/mixins" as helperModule;
+@use "../helpers/variables";
+@use '../library/library';
+
+// header {
+//     border: 2px solid blue;
+//     background-color: red;
+//     @include helperModule.color ();
+// }
+
+// header p {
+//     color: variables.$color;
+// }
+
+// button {
+//     @include library.button;
+// }
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+header {
+    background: #181818;
+    border-radius: 0px;
+}
+
+.header {
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+.wrapper {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    padding-top: 5px;
+}
+
+.navigation__link {
+    padding-top: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.navigation {
+    margin-left: 340px;
+}
+
+.navigation__link:not(:last-child) {
+    margin-right: 31px;
+}
+
+.navigation__link:first-child {
+    margin-right: 56px;
+}
+
+.navigation__link--active {
+    letter-spacing: 0.4px;
+    color: #000000;
+    background: #FFFFFF;
+    border-radius: 14px;
+    padding: 9px 20px 13px 20px;
+}
